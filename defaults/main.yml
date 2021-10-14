@@ -1,0 +1,7 @@
+---
+
+ufw_packages:
+  - ufw
+
+ufw_enable_ssh: true
+ufw_logging: 'on'

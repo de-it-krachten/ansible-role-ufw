@@ -1,0 +1,44 @@
+---
+
+- name: Install ufw
+  apt:
+    name: "{{ item }}"
+    state: present
+  loop: "{{ ufw_packages }}"
+
+- name: Activate ufw
+  ufw:
+    state: enabled
+
+- name: Service start/enable
+  service:
+    name: ufw
+    state: started
+    enabled: yes
+
+- name: Configure logging to {{ ufw_logging }}
+  ufw:
+    logging: "{{ ufw_logging }}"
+
+- name: Deny all incoming traffic by default
+  ufw:
+    direction: incoming
+    policy: deny
+
+- name: Allow all outgoing traafic by default
+  ufw:
+    direction: outgoing
+    policy: allow
+
+- name: Allow incoming ssh 
+  ufw:
+    rule: allow
+    name: OpenSSH
+  when: ufw_enable_ssh|bool
+
+- name: Remove incoming ssh allow rule
+  ufw:
+    rule: allow
+    name: OpenSSH
+    delete: yes
+  when: not ufw_enable_ssh|bool
