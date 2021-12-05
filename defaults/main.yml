@@ -1,7 +1,11 @@
 ---
 
+# ufw packages
 ufw_packages:
   - ufw
 
+# Should ssh be allow
 ufw_enable_ssh: true
+
+# Tun on/off logging
 ufw_logging: 'on'
