@@ -4,9 +4,7 @@
 ufw_packages:
   - ufw
   - procps
-  - kmod
   - iproute2
-#  - linux-azure-5.11
 
 # Should ssh be allow
 ufw_enable_ssh: true
