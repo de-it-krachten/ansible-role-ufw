@@ -6,6 +6,11 @@
     state: present
   loop: "{{ ufw_packages }}"
 
+#- name: Load ip6table_filter
+#  modprobe:
+#    name: ip6table_filter
+#    state: present
+
 - name: Activate ufw
   ufw:
     state: enabled
@@ -25,7 +30,7 @@
     direction: incoming
     policy: deny
 
-- name: Allow all outgoing traafic by default
+- name: Allow all outgoing traffic by default
   ufw:
     direction: outgoing
     policy: allow
@@ -33,12 +38,12 @@
 - name: Allow incoming ssh 
   ufw:
     rule: allow
-    name: OpenSSH
+    name: ssh
   when: ufw_enable_ssh|bool
 
 - name: Remove incoming ssh allow rule
   ufw:
     rule: allow
-    name: OpenSSH
+    name: ssh
     delete: yes
   when: not ufw_enable_ssh|bool

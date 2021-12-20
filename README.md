@@ -21,8 +21,6 @@ Supported platforms
 Role Variables
 --------------
 <pre><code>
-
-
 # ufw packages
 ufw_packages:
   - ufw
@@ -39,7 +37,6 @@ Example Playbook
 ----------------
 
 <pre><code>
-
 - name: Converge
   hosts: all
   tasks:
