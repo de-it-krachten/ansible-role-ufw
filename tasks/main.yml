@@ -1,10 +1,28 @@
 ---
 
+- name: Load variables based on OS type
+  include_vars: "{{ lookup('first_found', params) }}"
+  vars:
+    params:
+      files:
+        - "{{ ansible_distribution }}-{{ ansible_distribution_major_version }}.yml"
+        - "{{ ansible_distribution }}.yml"
+        - "family-{{ ansible_os_family }}-{{ ansible_distribution_major_version }}.yml"
+        - "family-{{ ansible_os_family }}.yml"
+        - default.yml
+      paths:
+        - 'vars'
+
 - name: Install ufw
-  apt:
-    name: "{{ item }}"
+  package:
+    name: "{{ ufw_packages }}"
     state: present
-  loop: "{{ ufw_packages }}"
+  register: _packages_result
+
+- name: Show packaged installed and/or updated
+  debug:
+    var: _packages_result
+#  when: _packages_result.results|length > 0
 
 #- name: Load ip6table_filter
 #  modprobe:

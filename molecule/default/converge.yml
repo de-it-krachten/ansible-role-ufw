@@ -2,8 +2,8 @@
 
 - name: Converge
   hosts: all
-  vars: null
+  vars:
   tasks:
-    - name: Include role 'ansible-role-ufw'
+    - name: "Include role 'ansible-role-ufw'"
       include_role:
-        name: ansible-role-ufw
+        name: "ansible-role-ufw"

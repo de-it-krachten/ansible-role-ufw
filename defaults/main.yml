@@ -1,11 +1,5 @@
 ---
 
-# ufw packages
-ufw_packages:
-  - ufw
-  - procps
-  - iproute2
-
 # Should ssh be allow
 ufw_enable_ssh: true
 
