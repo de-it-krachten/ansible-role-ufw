@@ -28,6 +28,10 @@ jobs:
         with:
           python-version: '3.x'
 
+      - name: Show runner info
+        run: |
+          hostname -f
+
       - name: Install test dependencies.
         run: pip3 install ansible ansible-lint yamllint jmespath
 
@@ -37,21 +41,21 @@ jobs:
           yamllint .
           ansible-lint
 
-
   molecule:
     name: Molecule
     runs-on: ubuntu-latest
     strategy:
+      fail-fast: true
       matrix:
         include:
           - distro: debian10
             playbook: converge.yml
           - distro: debian11
             playbook: converge.yml
-          # - distro: ubuntu1804
-          #   playbook: converge.yml
-          # - distro: ubuntu2004
-          #   playbook: converge.yml
+          - distro: ubuntu1804
+            playbook: converge.yml
+          - distro: ubuntu2004
+            playbook: converge.yml
 
     steps:
       - name: Check out the codebase.
@@ -63,6 +67,10 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: '3.x'
+
+      - name: Show runner info
+        run: |
+          hostname -f
 
       - name: Install test dependencies.
         run: pip3 install ansible ansible-lint molecule[docker] docker yamllint jmespath

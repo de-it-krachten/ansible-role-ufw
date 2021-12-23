@@ -39,6 +39,7 @@ galaxy:
 # Github
 github:
   active: true
+  fast_fail: false
   self_hosted: false
   owner: de-it-krachten
   repo: ansible-role-ufw
@@ -56,6 +57,9 @@ molecule:
     - ubuntu1804
     - ubuntu2004
   converge:
+    playbooks: []
+    vars: {}
+  prepare:
     playbooks: []
     vars: {}
 
