@@ -38,12 +38,12 @@
 - name: Allow incoming ssh 
   ufw:
     rule: allow
-    name: ssh
+    name: "{{ ufw_ssh_rule }}"
   when: ufw_enable_ssh|bool
 
 - name: Remove incoming ssh allow rule
   ufw:
     rule: allow
-    name: ssh
+    name: "{{ ufw_ssh_rule }}"
     delete: yes
   when: not ufw_enable_ssh|bool

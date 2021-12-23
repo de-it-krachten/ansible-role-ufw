@@ -9,5 +9,8 @@ ufw_packages:
 # Should ssh be allow
 ufw_enable_ssh: true
 
+# name of the ssh rule
+ufw_ssh_rule: OpenSSH
+
 # Tun on/off logging
 ufw_logging: 'on'
