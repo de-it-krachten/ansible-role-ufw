@@ -1,0 +1,8 @@
+---
+
+# ufw packages
+ufw_packages:
+  - ufw
+  - procps
+  - iproute2
+  - netbase
