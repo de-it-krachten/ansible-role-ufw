@@ -3,7 +3,7 @@
 
 # ansible-role-ufw
 
-Installs & configure UFW on Debian systems
+Installs & configure UFW
 
 
 Platforms
@@ -11,6 +11,10 @@ Platforms
 
 Supported platforms
 
+- CentOS 7
+- CentOS 8
+- RockyLinux 8
+- AlmaLinux 8
 - Debian 10 (Buster)
 - Debian 11 (Bullseye)
 - Ubuntu 18.04 LTS
@@ -21,12 +25,6 @@ Supported platforms
 Role Variables
 --------------
 <pre><code>
-# ufw packages
-ufw_packages:
-  - ufw
-  - procps
-  - iproute2
-
 # Should ssh be allow
 ufw_enable_ssh: true
 
@@ -42,11 +40,11 @@ Example Playbook
 ----------------
 
 <pre><code>
-- name: Converge
+- name: sample playbook for role 'ufw'
   hosts: all
-  vars: null
+  vars:
   tasks:
-    - name: Include role 'ansible-role-ufw'
+    - name: Include role 'ufw'
       include_role:
-        name: ansible-role-ufw
+        name: ufw
 </pre></code>

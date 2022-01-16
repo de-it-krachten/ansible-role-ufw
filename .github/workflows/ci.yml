@@ -48,6 +48,12 @@ jobs:
       fail-fast: false
       matrix:
         include:
+          - distro: centos7
+            playbook: converge.yml
+          - distro: centos8
+            playbook: converge.yml
+          - distro: rockylinux8
+            playbook: converge.yml
           - distro: debian10
             playbook: converge.yml
           - distro: debian11
