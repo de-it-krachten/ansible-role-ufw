@@ -1,3 +1,5 @@
 ---
 
-roles: []
+roles:
+  - robertdebock.epel
+  - robertdebock.powertools

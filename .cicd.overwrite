@@ -1,0 +1,8 @@
+generic:
+  role_description: |
+    Installs & configure UFW
+molecule:
+  prepare:
+    vars:
+      activate_epel: true
+      activate_powertools: true
