@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/de-it-krachten/ansible-role-ufw/compare/v1.0.0...v1.0.1) (2022-03-06)
+
+
+### Bug Fixes
+
+* open ssh port before starting service ([1edd29d](https://github.com/de-it-krachten/ansible-role-ufw/commit/1edd29d21477533959a6af2e78c3c28d423fa9a5))
+
 # 1.0.0 (2022-01-16)
 
 
