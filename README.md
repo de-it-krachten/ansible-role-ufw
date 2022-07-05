@@ -42,6 +42,17 @@ ufw_ssh_rule: OpenSSH
 ufw_logging: 'on'
 </pre></code>
 
+### vars/Fedora.yml
+<pre><code>
+# ufw packages
+ufw_packages:
+  - ufw
+  - procps-ng
+
+# name of the ssh rule
+ufw_ssh_rule: SSH
+</pre></code>
+
 ### vars/family-RedHat.yml
 <pre><code>
 # ufw packages
