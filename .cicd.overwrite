@@ -1,8 +1,9 @@
+---
+
 generic:
   role_description: |
     Installs & configure UFW
-github:
-  fail_fast: false
+
 molecule:
   prepare:
     vars:
