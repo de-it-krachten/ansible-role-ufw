@@ -1,0 +1,9 @@
+---
+
+# ufw packages
+ufw_packages:
+  - ufw
+  - procps-ng
+
+# name of the ssh rule
+ufw_ssh_rule: SSH
