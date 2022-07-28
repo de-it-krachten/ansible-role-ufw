@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/de-it-krachten/ansible-role-ufw/compare/v1.1.0...v1.2.0) (2022-07-28)
+
+
+### Features
+
+* Implement ansible-lint v6 support ([5fac8dc](https://github.com/de-it-krachten/ansible-role-ufw/commit/5fac8dc2d4511535de74c08fbeb2e8558df490ce))
+
 # [1.1.0](https://github.com/de-it-krachten/ansible-role-ufw/compare/v1.0.1...v1.1.0) (2022-07-09)
 
 
