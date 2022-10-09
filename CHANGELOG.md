@@ -1,3 +1,11 @@
+# [1.3.0](https://github.com/de-it-krachten/ansible-role-ufw/compare/v1.2.0...v1.3.0) (2022-10-09)
+
+
+### Features
+
+* Move to FQCN ([00e6d57](https://github.com/de-it-krachten/ansible-role-ufw/commit/00e6d5796b1c86c56d6f82e315ea991ba134fa61))
+* Update CI to latest standards ([2106975](https://github.com/de-it-krachten/ansible-role-ufw/commit/21069759627f7ddcbdf4ba358867b0204e23ae4d))
+
 # [1.2.0](https://github.com/de-it-krachten/ansible-role-ufw/compare/v1.1.0...v1.2.0) (2022-07-28)
 
 
