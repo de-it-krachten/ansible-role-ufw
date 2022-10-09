@@ -6,6 +6,16 @@
 Installs & configure UFW
 
 
+
+## Dependencies
+
+#### Roles
+None
+
+#### Collections
+- community.general
+- community.general
+
 ## Platforms
 
 Supported platforms
@@ -42,6 +52,7 @@ ufw_ssh_rule: OpenSSH
 # Tun on/off logging
 ufw_logging: 'on'
 </pre></code>
+
 
 ### vars/Fedora.yml
 <pre><code>
@@ -84,6 +95,6 @@ ufw_packages:
   become: "{{ molecule['converge']['become'] | default('yes') }}"
   tasks:
     - name: Include role 'ufw'
-      include_role:
+      ansible.builtin.include_role:
         name: ufw
 </pre></code>
