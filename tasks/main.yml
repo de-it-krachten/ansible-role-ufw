@@ -1,7 +1,7 @@
 ---
 
 - name: Load variables based on OS type
-  include_vars: "{{ lookup('first_found', params) }}"
+  ansible.builtin.include_vars: "{{ lookup('first_found', params) }}"
   vars:
     params:
       files:
@@ -14,42 +14,42 @@
         - 'vars'
 
 - name: Install ufw
-  package:
+  ansible.builtin.package:
     name: "{{ ufw_packages }}"
     state: present
 
 - name: Allow incoming ssh
-  ufw:
+  community.general.ufw:
     rule: allow
     name: "{{ ufw_ssh_rule }}"
   when: ufw_enable_ssh|bool
 
 - name: Activate ufw
-  ufw:
+  community.general.ufw:
     state: enabled
 
 - name: Service start/enable
-  service:
+  ansible.builtin.service:
     name: ufw
     state: started
     enabled: yes
 
 - name: Configure logging to {{ ufw_logging }}
-  ufw:
+  community.general.ufw:
     logging: "{{ ufw_logging }}"
 
 - name: Deny all incoming traffic by default
-  ufw:
+  community.general.ufw:
     direction: incoming
     policy: deny
 
 - name: Allow all outgoing traffic by default
-  ufw:
+  community.general.ufw:
     direction: outgoing
     policy: allow
 
 - name: Remove incoming ssh allow rule
-  ufw:
+  community.general.ufw:
     rule: allow
     name: "{{ ufw_ssh_rule }}"
     delete: yes
