@@ -34,7 +34,7 @@
     state: started
     enabled: yes
 
-- name: Configure logging to {{ ufw_logging }}
+- name: Configure logging to {{ ufw_logging }}  # noqa args[module]
   community.general.ufw:
     logging: "{{ ufw_logging }}"
 

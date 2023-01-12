@@ -1,6 +1,6 @@
 ---
 
-- name: Open firewall ports
+- name: Open firewall ports  # noqa args[module]
   community.general.ufw:
     rule: allow
     port: "{{ (item.port | regex_replace('-', ':')) if item.port is defined else omit }}"
