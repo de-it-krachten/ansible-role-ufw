@@ -6,5 +6,5 @@ ufw_enable_ssh: true
 # name of the ssh rule
 ufw_ssh_rule: OpenSSH
 
-# Tun on/off logging
+# Tun on/off logging. Other options include low/medium/high/full
 ufw_logging: 'on'

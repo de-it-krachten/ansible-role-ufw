@@ -49,20 +49,19 @@ ufw_enable_ssh: true
 # name of the ssh rule
 ufw_ssh_rule: OpenSSH
 
-# Tun on/off logging
+# Tun on/off logging. Other options include low/medium/high/full
 ufw_logging: 'on'
 </pre></code>
 
 
-### vars/Fedora.yml
+### vars/family-Debian.yml
 <pre><code>
 # ufw packages
 ufw_packages:
   - ufw
-  - procps-ng
-
-# name of the ssh rule
-ufw_ssh_rule: SSH
+  - procps
+  - iproute2
+  - netbase
 </pre></code>
 
 ### vars/family-RedHat.yml
@@ -75,14 +74,15 @@ ufw_packages:
 ufw_ssh_rule: SSH
 </pre></code>
 
-### vars/family-Debian.yml
+### vars/Fedora.yml
 <pre><code>
 # ufw packages
 ufw_packages:
   - ufw
-  - procps
-  - iproute2
-  - netbase
+  - procps-ng
+
+# name of the ssh rule
+ufw_ssh_rule: SSH
 </pre></code>
 
 
@@ -93,6 +93,11 @@ ufw_packages:
 - name: sample playbook for role 'ufw'
   hosts: all
   become: "yes"
+  vars:
+    ufw_logging: high
+  roles:
+    - deitkrachten.showinfo
+    - robertdebock.rsyslog
   tasks:
     - name: Include role 'ufw'
       ansible.builtin.include_role:

@@ -5,7 +5,16 @@ generic:
     Installs & configure UFW
 
 molecule:
+  requirements:
+    roles_extra:
+      - name: robertdebock.rsyslog
+        src: robertdebock.rsyslog
   prepare:
     vars:
       activate_epel: true
       activate_powertools: true
+  converge:
+    roles:
+      - robertdebock.rsyslog
+    vars:
+      ufw_logging: high 
