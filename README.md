@@ -93,8 +93,6 @@ ufw_ssh_rule: SSH
 - name: sample playbook for role 'ufw'
   hosts: all
   become: "yes"
-  roles:
-    - deitkrachten.showinfo
   tasks:
     - name: Include role 'ufw'
       ansible.builtin.include_role:
