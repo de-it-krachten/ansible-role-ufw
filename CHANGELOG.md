@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/de-it-krachten/ansible-role-ufw/compare/v1.3.0...v1.4.0) (2023-08-16)
+
+
+### Features
+
+* Update supported platforms & CI ([f393174](https://github.com/de-it-krachten/ansible-role-ufw/commit/f3931743ec8e8f0b67fea3fd7d26c9f667faf8c5))
+
 # [1.3.0](https://github.com/de-it-krachten/ansible-role-ufw/compare/v1.2.0...v1.3.0) (2022-10-09)
 
 
