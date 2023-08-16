@@ -1,0 +1,8 @@
+---
+
+# ufw packages
+ufw_packages:
+  - ufw
+
+# name of the ssh rule
+ufw_ssh_rule: SSH

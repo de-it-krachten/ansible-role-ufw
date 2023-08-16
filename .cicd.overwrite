@@ -1,9 +1,17 @@
 ---
 
+# Generic
 generic:
   role_description: |
     Installs & configure UFW
 
+# Supported platforms
+platforms:
+  opensuse15:
+    ci: false
+    supported: false
+
+# Molecule
 molecule:
   prepare:
     vars:
