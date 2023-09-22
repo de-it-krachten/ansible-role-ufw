@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/de-it-krachten/ansible-role-ufw/compare/v1.4.0...v1.4.1) (2023-09-22)
+
+
+### Bug Fixes
+
+* Fix loop label to string ([c960a32](https://github.com/de-it-krachten/ansible-role-ufw/commit/c960a324ec8b5e95942da297d2f53a0bfb71113f))
+
 # [1.4.0](https://github.com/de-it-krachten/ansible-role-ufw/compare/v1.3.0...v1.4.0) (2023-08-16)
 
 
