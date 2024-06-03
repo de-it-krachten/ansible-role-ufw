@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/de-it-krachten/ansible-role-ufw/compare/v1.4.1...v1.5.0) (2024-06-03)
+
+
+### Features
+
+* Add support for Ubuntu 24.04 LTS + Fedora 40 ([e6d0035](https://github.com/de-it-krachten/ansible-role-ufw/commit/e6d0035c5bcc74ef7744ade9380710216544ee17))
+
 ## [1.4.1](https://github.com/de-it-krachten/ansible-role-ufw/compare/v1.4.0...v1.4.1) (2023-09-22)
 
 
