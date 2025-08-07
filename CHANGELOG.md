@@ -1,3 +1,14 @@
+# [1.7.0](https://github.com/de-it-krachten/ansible-role-ufw/compare/v1.6.0...v1.7.0) (2025-08-07)
+
+
+### Features
+
+* Add support for AlmaLinux 10 ([b0ff97f](https://github.com/de-it-krachten/ansible-role-ufw/commit/b0ff97f76326d7e04571817631f186a57dae0845))
+* Add support for Debian 13 (Trixie) ([fea2e4e](https://github.com/de-it-krachten/ansible-role-ufw/commit/fea2e4efe543284b37f6f045a690146f878bde74))
+* Add support for OracleLinux 10 ([482d2c3](https://github.com/de-it-krachten/ansible-role-ufw/commit/482d2c37960faf8e705fe69b6d5a248ff6e2bd97))
+* Add support for Red Hat Enterprise Linux 10 ([4a8c601](https://github.com/de-it-krachten/ansible-role-ufw/commit/4a8c601009a7d0f26b0d1dbaab80542f08aceccf))
+* Add support for RockyLinux 10 ([78b7579](https://github.com/de-it-krachten/ansible-role-ufw/commit/78b7579504291f81dcbac5747d67bcca33f7129e))
+
 # [1.6.0](https://github.com/de-it-krachten/ansible-role-ufw/compare/v1.5.0...v1.6.0) (2024-12-29)
 
 
