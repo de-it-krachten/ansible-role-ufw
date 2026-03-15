@@ -1,3 +1,11 @@
+# [1.8.0](https://github.com/de-it-krachten/ansible-role-ufw/compare/v1.7.0...v1.8.0) (2026-03-15)
+
+
+### Features
+
+* Added support for Fedora 43 ([c2e027f](https://github.com/de-it-krachten/ansible-role-ufw/commit/c2e027f24c243c58f1e5470687d1ddb4cd808821))
+* Drop support for Fedora 41 ([bfbd917](https://github.com/de-it-krachten/ansible-role-ufw/commit/bfbd9172bfc89831dd976ba9f5bfce137fe8959d))
+
 # [1.7.0](https://github.com/de-it-krachten/ansible-role-ufw/compare/v1.6.0...v1.7.0) (2025-08-07)
 
 
