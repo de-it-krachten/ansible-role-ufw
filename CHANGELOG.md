@@ -1,3 +1,17 @@
+# [1.9.0](https://github.com/de-it-krachten/ansible-role-ufw/compare/v1.8.0...v1.9.0) (2026-07-24)
+
+
+### Bug Fixes
+
+* Standarize vars.yml ([86e07a1](https://github.com/de-it-krachten/ansible-role-ufw/commit/86e07a1e4c0993906f2ce7f453c5492f5bd5b642))
+
+
+### Features
+
+* Added support for Fedora 44 ([b0c54a1](https://github.com/de-it-krachten/ansible-role-ufw/commit/b0c54a16a163eb0d958579a5d8d63477e13133d4))
+* Added support for Ubuntu 26.04 LTS ([b01135a](https://github.com/de-it-krachten/ansible-role-ufw/commit/b01135a1344a941c2f37fa0a2f2da9326308a747))
+* Drop support for Fedora 42 ([01fb3ed](https://github.com/de-it-krachten/ansible-role-ufw/commit/01fb3edfdca0d0dfc33184b996e6e3e2e44873e4))
+
 # [1.8.0](https://github.com/de-it-krachten/ansible-role-ufw/compare/v1.7.0...v1.8.0) (2026-03-15)
 
 
