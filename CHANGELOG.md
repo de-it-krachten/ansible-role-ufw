@@ -1,3 +1,10 @@
+# [1.10.0](https://github.com/de-it-krachten/ansible-role-ufw/compare/v1.9.0...v1.10.0) (2026-10-11)
+
+
+### Features
+
+* Drop support for Debian 11 (Bullseye) ([137adb8](https://github.com/de-it-krachten/ansible-role-ufw/commit/137adb8d0052e7e6b2b0430d07f68797072dca3a))
+
 # [1.9.0](https://github.com/de-it-krachten/ansible-role-ufw/compare/v1.8.0...v1.9.0) (2026-07-24)
 
 
